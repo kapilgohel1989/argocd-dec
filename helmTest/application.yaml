@@ -6,10 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kapilgohel1989/argocd.git
-    targetRevision: "main"
-    chart: my-firstchart
-    path: helmChart
+    repoURL: "https://github.com/kapilgohel1989/argocd"
+    path: "helmChart"
   destination:
     server: https://kubernetes.default.svc
     namespace: default
