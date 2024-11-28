@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kapilgohel1989/argocd.git
-    targetRevision: main
+    targetRevision: "main"
     chart: my-firstchart
     path: helmChart
   destination:
