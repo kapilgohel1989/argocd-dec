@@ -7,9 +7,9 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kapilgohel1989/argocd.git
-    targetRevision: 1.0.0
-    chart: helmTest
-    
+    targetRevision: main
+    chart: my-firstchart
+    path: helmTest
   destination:
     server: https://kubernetes.default.svc
     namespace: default
