@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook-test
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kapilgohel1989/argocd.git
+    targetRevision: 1.0.0
+    chart: my-firstchart
+    path: helmTest
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
